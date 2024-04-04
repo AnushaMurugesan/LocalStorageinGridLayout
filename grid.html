@@ -1,0 +1,72 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="gridcss.css">
+    <!-- <link rel="stylesheet" href="modalcss.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+    <div class="header">
+        <span>Users List</span>
+        <button class="header-button" onclick="document.querySelector('#id1').style.display='block'">AddUser</button>
+    </div>
+    <hr>
+    <div class="container" id="container">
+        
+        <!-- <div class="m-container" id="m-id"> -->
+            <div id="id1" class="modal-container">
+                <div class="modal-header">
+                    Add User
+                    <button class="close" onclick="document.querySelector('#id1').style.display='none'">&times;</button>
+                </div>
+
+                <form class="modal-form" id="f1">
+                    <div class="modal-input">
+                        <!-- <div class="modal-name"> -->
+                        <label class="modal-head"><br>Name</label><br>
+                        <input class="modal-box" id="name"  name="name"  placeholder="Enter your name" type="text" required>
+                        <!-- </div> -->
+
+                        <!-- <div> -->
+                        <label class="modal-head"><br>Age</label><br>
+                        <input class="modal-box" id="age" name="age" placeholder="Enter your age" type="text" required>
+                        <!-- </div> -->
+
+                        <!-- <div> -->
+                        <label class="modal-head"><br>Email</label><br>
+                        <input class="modal-box" id="mail" name="mail"
+                            placeholder="Enter your email address" type="text"required>
+                        <!-- </div> -->
+
+                        <!-- <div> -->
+                        <label class="modal-head"><br>About</label><br>
+                        <textarea
+                            style="padding:2%; width:85%;font-family:'Inter'; height:15%; margin:1%;border: 1px solid #C5C5C5;border-radius: 10px;"
+                            row="8" cols="38" id="about" placeholder="Type here"></textarea><br>
+                        <button class="modal-savebtn" id="id2">Save</button>
+                        <span><button class="modal-cancelbtn" id="id3">Cancel</button></span>
+                        <!-- </div> -->
+                    </div>
+                    <!-- <div > -->
+
+                    <!-- </div> -->
+                </form>
+                <!-- </div> -->
+
+            </div>
+        <!-- </div> -->
+
+    </div>
+    <script src="gridjs.js"></script>
+    <!-- <script src="modaljs.js"></script> -->
+
+</body>
+
+</html>
